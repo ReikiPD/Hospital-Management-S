@@ -21,7 +21,7 @@ const Navbar = () => {
         onClick={() => navigate("/")}
         className="text-xl font-medium mb-5 w-44 cursor-pointer"
       >
-        Rumah Sakit Olahraga Nasional
+        Hospital Management System
       </p>
       <ul className="md:flex items-start gap-5 font-medium hidden">
         <NavLink to="/">

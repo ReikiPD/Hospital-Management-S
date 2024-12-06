@@ -25,7 +25,7 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="text-xl font-medium mb-5 w-44 cursor-pointer"
         >
-          Rumah Sakit Olahraga Nasional
+          Hospital Management System
         </p>
         <p className="border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600">
           {aToken ? "Admin" : "Doctor"}
