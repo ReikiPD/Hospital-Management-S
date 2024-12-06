@@ -17,9 +17,10 @@ const MyAppointments = () => {
 
     // Function to format the date eg. ( 20_01_2000 => 20 Jan 2000 )
     const slotDateFormat = (slotDate) => {
-        const dateArray = slotDate.split('_')
-        return dateArray[0] + " " + months[Number(dateArray[1])] + " " + dateArray[2]
-    }
+        const dateArray = slotDate.split('_');
+        const monthIndex = Number(dateArray[1]) - 1; // Kurangi 1 untuk mencocokkan indeks array
+        return dateArray[0] + " " + months[monthIndex] + " " + dateArray[2];
+    };
 
     // Getting User Appointments Data Using API
     const getUserAppointments = async () => {
